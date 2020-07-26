@@ -54,6 +54,7 @@ function App() {
           <Route path="/reg-user" component={Register} />
           <Route path="/login-user" component={Login} />
           <Route path="/dynamicProduct" component={DynaminProduct} />
+          <Route path="/RepChatWindow" component={RepChatWindow} />
         </Switch>
         <ChatWindow />
         <Footer />
