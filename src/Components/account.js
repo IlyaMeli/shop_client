@@ -5,7 +5,7 @@ import { logOut } from "../state/userSlice";
 import { Link } from "react-router-dom";
 import PurchsedProduct from "./PurchsedProduct";
 import { reset_slice as reset_product_slice } from "../state/product.slice";
-
+// oded
 function Account() {
   const dispatch = useDispatch();
   const { pic, user_name } = useSelector((state) => state.user);
