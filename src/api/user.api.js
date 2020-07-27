@@ -1,5 +1,5 @@
 export async function loginCall({ user_name, password }) {
-  const response = await fetch("/api/users/login-user", {
+  const response = await fetch(`${process.env.API_URL}/api/users/login-user`, {
     method: "POST",
     mode: "cors",
     headers: {
@@ -21,7 +21,7 @@ export async function loginCall({ user_name, password }) {
 }
 
 export async function registerCall({ name, email, user_name, password }) {
-  const response = await fetch("/api/users/reg-user", {
+  const response = await fetch(`${process.env.API_URL}/api/users/reg-user`, {
     method: "POST",
     mode: "cors",
     headers: {

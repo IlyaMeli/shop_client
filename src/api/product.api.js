@@ -1,7 +1,5 @@
 export async function getProducts(num) {
   return await (
-    await fetch(
-      `https://arcane-citadel-42275.herokuapp.com/products/all-products?page=${num}`
-    )
+    await fetch(`${process.env.API_URL}/products/all-products?page=${num}`)
   ).json();
 }
