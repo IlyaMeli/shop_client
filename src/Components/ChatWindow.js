@@ -50,13 +50,13 @@ const ChatWindow = () => {
               <br />
               <br />
               <br />
-              <SChatLink
+              {/* <SChatLink
                 href="http://localhost:3000/public-chat-client.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 http://localhost:3000/public-chat-client.html
-              </SChatLink>
+              </SChatLink> */}
             </SSubTitle>
           </SSubTitleWrapper>
           <SForm onSubmit={formSubmit}>
