@@ -5,11 +5,11 @@ import store from "./state/configure.store";
 import { Provider } from "react-redux";
 import GlobalStyles from "../src/styles/global.styles";
 
-if (!process.env.API_URL) {
-  process.env.API_URL = "";
+if (process.env.API_URL) {
+  API_URL = process.env.API_URL;
 }
 
-console.log(process.env.API_URL);
+console.log(process.env);
 render(
   <>
     <GlobalStyles />
