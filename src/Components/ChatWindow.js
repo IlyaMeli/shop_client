@@ -50,8 +50,6 @@ const ChatWindow = () => {
               <br />
               open the HR Representative chat interface
               <br />
-              <br />
-              <br />
               <SChatLink
                 to="/RepChatWindow"
                 target="_blank"
