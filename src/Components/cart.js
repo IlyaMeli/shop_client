@@ -16,9 +16,10 @@ function Cart() {
     return (
       <h1>
         Oops, Your cart is empty....
-        <br></br>
+        <br />
         explore some of our new products <SLink to="/">here</SLink>
-        <br></br>
+        <br />
+        <br />
         To see your purchsed items go log on and go to your account.
       </h1>
     );
@@ -56,7 +57,7 @@ function Cart() {
           // prettier-ignore
           onClick={() => { dispatch(add_to_purchased())}}
         >
-          PROCEED TO CHECKOUT
+          BUY PRODUCTS IN CART
         </StyledAddBtn>
       </div>
     );
