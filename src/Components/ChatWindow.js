@@ -53,6 +53,10 @@ const ChatWindow = () => {
               <SChatLink
                 to="/RepChatWindow"
                 target="_blank"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.open(this.makeHref("/RepChatWindow"));
+                }}
                 // rel="noopener noreferrer"
               >
                 RepChatWindow
