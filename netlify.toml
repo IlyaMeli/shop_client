@@ -1,4 +1,4 @@
   status = 200[[redirects]]
-  from = "/*"
+  from = "/RepChatWindow"
   to = "/index.html/https://arcane-citadel-42275.herokuapp.com"
   status = 200
