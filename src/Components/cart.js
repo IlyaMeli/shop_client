@@ -12,13 +12,14 @@ function Cart() {
   );
   const dispatch = useDispatch();
 
-
   if (products_in_cart.length === 0) {
     return (
       <h1>
         Oops, Your cart is empty....
         <br></br>
         explore some of our new products <SLink to="/">here</SLink>
+        <br></br>
+        To see your purchsed items go log on and go to your account.
       </h1>
     );
   } else {

@@ -69,6 +69,7 @@ const productsSlice = createSlice({
     },
     add_to_purchased: (state) => {
       state.purchased_products = state.products_in_cart;
+      state.products_in_cart = [];
     },
     reset_slice: (state) => {
       state.products_in_cart = [];
