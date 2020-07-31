@@ -1,4 +1,4 @@
-[[redirects]]
+  status = 200[[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index.html/https://arcane-citadel-42275.herokuapp.com"
   status = 200
