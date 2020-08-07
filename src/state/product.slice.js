@@ -69,6 +69,8 @@ const productsSlice = createSlice({
     },
     add_to_purchased: (state) => {
       state.purchased_products = state.products_in_cart;
+    },
+    clean_purchased: (state) => {
       state.products_in_cart = [];
     },
     reset_slice: (state) => {
@@ -96,6 +98,7 @@ export const {
   update_range,
   CalcCartTtoal,
   add_to_purchased,
+  clean_purchased,
   reset_slice,
   next_page,
   prev_page,

@@ -3,7 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import ProductCard from "./ProductCard";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { add_to_purchased } from "../state/product.slice";
+import { add_to_purchased, clean_purchased } from "../state/product.slice";
+import { updateUserPurchased } from "../api/user.api";
+import { add_to_user_purchased } from "../state/userSlice";
 
 function Cart() {
   useSelector((state) => state.user);
@@ -11,6 +13,19 @@ function Cart() {
     (state) => state.products
   );
   const dispatch = useDispatch();
+
+  const buy_items = async () => {
+    // update user purchased array in user slice
+    dispatch(add_to_purchased());
+    if (user.name != "User") {
+      //updates view in the account view component
+      dispatch(add_to_user_purchased(products_in_cart));
+      //update user purchased array in database
+      const cont = await updateUserPurchased(user);
+      if (cont) dispatch(clean_purchased());
+    }
+    dispatch(clean_purchased());
+  };
 
   if (products_in_cart.length === 0) {
     return (
@@ -53,12 +68,7 @@ function Cart() {
             ))}
         </StyledProductWrapper>
         <STotalCart>Cart Total: ${cart_total}</STotalCart>
-        <StyledAddBtn
-          // prettier-ignore
-          onClick={() => { dispatch(add_to_purchased())}}
-        >
-          BUY PRODUCTS IN CART
-        </StyledAddBtn>
+        <StyledAddBtn onClick={buy_items}>BUY ITEMS</StyledAddBtn>
       </div>
     );
   }
