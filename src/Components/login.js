@@ -17,8 +17,12 @@ const Login = () => {
   const [formError, setFormError] = useState(null);
 
   const handleSubmitInt = async (e) => {
+    // e.preventDefault();
     try {
       const { token, user } = await loginCall({ user_name, password });
+
+      // console.log({ token });
+      // console.log({ user });
 
       setSessionToken(token);
 

@@ -3,19 +3,18 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 
 const PurchsedProducts = () => {
-  // const { purchased_products } = useSelector((state) => state.products);
-  const { user_purchased_items } = useSelector((state) => state.user);
+  const { purchased_products } = useSelector((state) => state.products);
 
   return (
     <StyledPurchsedProduct>
-      {user_purchased_items.length !== 0 ? (
+      {purchased_products.length !== 0 ? (
         <StyledTitle>Recently Purchased Items:</StyledTitle>
       ) : (
         <br />
       )}
       <StyledPruchasedWrapper>
-        {user_purchased_items &&
-          user_purchased_items.map(({ name, price }, index) =>
+        {purchased_products &&
+          purchased_products.map(({ name, price }, index) =>
             // prettier-ignore
             <StyledCard>
                 <StyledImg
