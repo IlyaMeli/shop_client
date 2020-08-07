@@ -8,7 +8,7 @@ import { updateUserPurchased } from "../api/user.api";
 import { add_to_user_purchased } from "../state/userSlice";
 
 function Cart() {
-  useSelector((state) => state.user);
+  const user = useSelector((state) => state.user);
   const { products_in_cart, cart_total } = useSelector(
     (state) => state.products
   );
