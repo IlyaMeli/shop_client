@@ -15,11 +15,13 @@ const ChatWindow = () => {
   useEffect(() => {
     // console.log({ Primus: window.Primus });
     if (!primus && window.Primus) {
-      setPrimus(new window.Primus());
-      let Socket = primus.Socket;
+      setPrimus(
+        new window.Primus.connect("https://arcane-citadel-42275.herokuapp.com")
+      );
+      // let Socket = primus.Socket;
       // setSocket(new Socket("ws://arcane-citadel-42275.herokuapp.com"));
       // var Socket = primus.Socket,
-      let socket = new Socket("ws://arcane-citadel-42275.herokuapp.com");
+      // let socket = new Socket("ws://arcane-citadel-42275.herokuapp.com");
     }
   }, []);
 
