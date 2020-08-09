@@ -16,10 +16,10 @@ const ChatWindow = () => {
     // console.log({ Primus: window.Primus });
     if (!primus && window.Primus) {
       setPrimus(new window.Primus());
-      var Socket = primus.Socket;
+      let Socket = primus.Socket;
       // setSocket(new Socket("ws://arcane-citadel-42275.herokuapp.com"));
       // var Socket = primus.Socket,
-      socket = new Socket("ws://arcane-citadel-42275.herokuapp.com");
+      let socket = new Socket("ws://arcane-citadel-42275.herokuapp.com");
     }
   }, []);
 
