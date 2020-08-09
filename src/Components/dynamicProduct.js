@@ -21,7 +21,9 @@ function DynamicProduct({ location }) {
         <Description>{selected_product.desc}</Description>
         <StyledQtyWrapper>
           <StyledQtyBtns>
-            <StyledBtn onClick={() => setQTY(qty - 1)}>-</StyledBtn>
+            <StyledBtn onClick={() => setQTY(qty !== 0 ? qty - 1 : (qty = 0))}>
+              -
+            </StyledBtn>
             <StyledQTY> Quantity: {qty}</StyledQTY>
             <StyledBtn onClick={() => setQTY(qty + 1)}>+</StyledBtn>
           </StyledQtyBtns>
