@@ -8,6 +8,7 @@ const ChatWindow = () => {
   const [output, setOutput] = useState("");
   const [input, setInput] = useState("");
   const [open, setOpen] = useState(false);
+  const [socket, setSocket] = useState(null);
   const Socket = primus.Socket;
 
   // Tell primus to create a new connect to the current domain/port/protocol
@@ -16,7 +17,7 @@ const ChatWindow = () => {
     // console.log({ Primus: window.Primus });
     if (!primus && window.Primus) {
       setPrimus(new window.Primus());
-      socket = new Socket("ws://arcane-citadel-42275.herokuapp.com");
+      setSocket(new Socket("ws://arcane-citadel-42275.herokuapp.com"));
     }
   }, []);
 
