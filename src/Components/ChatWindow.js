@@ -276,7 +276,7 @@ const SChatLink = styled(Link)`
 const SSubTitle = styled.h1`
   color: #ef2853;
   font-weight: 400;
-  font-size: 0.8vw;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 10px;
