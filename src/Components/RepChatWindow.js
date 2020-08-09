@@ -8,7 +8,7 @@ const RepChatWindow = () => {
 
   useEffect(() => {
     // console.log({ Primus: window.Primus });
-    setPrimus(new window.Primus());
+    if (!primus && window.Primus) setPrimus(new window.Primus());
   }, []);
 
   useEffect(() => {

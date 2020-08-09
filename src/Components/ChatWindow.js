@@ -13,7 +13,7 @@ const ChatWindow = () => {
   // const primus;
   useEffect(() => {
     // console.log({ Primus: window.Primus });
-    setPrimus(new window.Primus());
+    if (!primus && window.Primus) setPrimus(new window.Primus());
   }, []);
 
   useEffect(() => {
@@ -26,7 +26,6 @@ const ChatWindow = () => {
   // Listen for submits of the form so we can send the message to the server.
   const formSubmit = (event) => {
     // Write the typed message.
-    event.preventDefault();
     event.preventDefault();
 
     primus.write(`${new Date().toLocaleTimeString()}- Customer: ${input}`);
