@@ -9,7 +9,9 @@ const RepChatWindow = () => {
   useEffect(() => {
     // console.log({ Primus: window.Primus });
     if (!primus && window.Primus)
-      new window.Primus.connect("https://arcane-citadel-42275.herokuapp.com");
+      setPrimus(
+        new window.Primus.connect("https://arcane-citadel-42275.herokuapp.com")
+      );
   }, []);
 
   useEffect(() => {
