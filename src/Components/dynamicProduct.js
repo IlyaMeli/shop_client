@@ -45,26 +45,25 @@ export default DynamicProduct;
 const Wrapper = styled.div`
   display: flex;
   /* border: solid 2px green; */
-  padding: 20px;
+  padding: 5vh;
   /* align-items: center; */
   justify-content: center;
 `;
 
 const DataWrapper = styled.div`
   /* border: solid 2px pink; */
-  padding: 20px;
+  padding: 3vh;
 `;
 
 const StyledImg = styled.img`
-  width: 400px;
-  height: 430px;
+  height: 75vh;
   /* border: solid 2px yellow; */
-  padding: 10px;
+  padding: 3vh;
 `;
 
 const ProductTitle = styled.div`
   /* border: solid 1px red; */
-  font-size: 1.8rem;
+  font-size: 5vh;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -74,7 +73,7 @@ const ProductPrice = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* border: solid 1px blue; */
-  font-size: 2rem;
+  font-size: 6vh;
   font-weight: 100;
 `;
 
@@ -82,29 +81,36 @@ const Description = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 100;
-  font-size: 1rem;
-  margin: 20px 0;
-  width: 400px;
+  font-size: 3vh;
+  margin: 5vh 0;
+  width: 40vw;
 `;
 const StyledBtn = styled.button`
   border: none;
   font-weight: bold;
   padding: 0.5rem;
   /* margin: 0.2rem; */
+
 `;
 
 const StyledQTY = styled.div`
   font-weight: bold;
   padding: 0.5rem;
+  font-size:2vh;
+
+
 `;
 
 const StyledQtyWrapper = styled.div`
   /* border: solid 3px black; */
   display: flex;
   flex-direction: row;
+  /* justify-content: flex-start; */
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 0.5rem;
+  font-size: 3vh;
+  padding: 3vh;
+
+  
 `;
 
 const StyledAddBtn = styled.button`
@@ -112,7 +118,7 @@ const StyledAddBtn = styled.button`
   margin-left: 2rem;
   padding: 0.5rem;
   box-shadow: 10px 10px #c9f2f6;
-
+  font-size:2vh;
   &:hover {
     cursor: pointer;
   }

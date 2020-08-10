@@ -45,7 +45,7 @@ function Home() {
       {prod_page !== 1 ? (
         <Spagination>
           <Spage onClick={() => dispatch(prev_page())}> previous </Spage>
-          <Spage onClick={() => dispatch(next_page())}> next </Spage>
+          {/* <Spage onClick={() => dispatch(next_page())}> next </Spage> */}
         </Spagination>
       ) : (
         <Spagination>
@@ -86,7 +86,7 @@ const Spagination = styled.div`
   justify-content: center;
 `;
 const Spage = styled.h1`
-  font-size: 1rem;
+  font-size: 3vh;
   margin: 10px;
   font-weight: 400;
   &:hover {
@@ -96,9 +96,14 @@ const Spage = styled.h1`
 
 const Sh1 = styled.h1`
   padding: auto;
-
+  font-size: 5vh;
+  background: linear-gradient(
+    rgba(255, 255, 255, 1) 70%,
+    rgba(201, 242, 246, 1) 30%
+  );
+  font-weight: 500;
   margin-left: 20vw;
-  margin-bottom: 50px;
+  margin-bottom: 10vh;
 `;
 
 const StyledRangeWrap = styled.div`

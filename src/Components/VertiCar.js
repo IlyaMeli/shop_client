@@ -59,19 +59,21 @@ const StyleCarousel = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
-  padding: 15px;
-  width: 10rem;
-  height: 30rem;
+  /* margin: auto; */
+  /* padding: 15px; */
+  width: 30vh;
+  height: 90vh;
   /* background-color: #7fffbf; */
   /* border: solid 3px red; */
 `;
-
 const SCarouselTitle = styled.h3`
-  margin-bottom: 35px;
+  margin-bottom: 10vh;
   background: linear-gradient(
     rgba(255, 255, 255, 1) 70%,
     rgba(201, 242, 246, 1) 30%
   );
-  width: 8.5rem;
+  font-size: 4vh;
+  width: 10.7vw;
+  font-weight: 500;
+
 `;

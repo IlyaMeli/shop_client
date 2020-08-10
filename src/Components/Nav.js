@@ -89,9 +89,9 @@ const LogoWrapper = styled.div`
   /* border: 1px red solid; */
 `;
 const Logo = styled.img`
-  margin-left: 30px;
-  width: 45%;
-  height: auto;
+  margin-left: 3vw;
+  width: auto;
+  height: 14vh;
 `;
 
 const StyledH3 = styled.h3`
@@ -100,6 +100,9 @@ const StyledH3 = styled.h3`
   display: flex;
   position: relative;
   align-items: center;
+  font-size: 3.5vh;
+  padding:0;
+  margin: 0;
 
   &::after {
     content: "";
@@ -126,6 +129,7 @@ const Slink = styled(Link)`
 const StyledProfPic = styled.img`
   border-radius: 50%;
   /* border: solid 3px deeppink; */
-  width: 40px;
+  width: 4vw;
   height: auto;
 `;
+

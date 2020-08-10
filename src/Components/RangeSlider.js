@@ -26,23 +26,26 @@ const PriceFilterWrapper = styled.div`
   /* border: 3px black solid; */
   flex-basis: 20%;
   height: 6vh;
+  margin-bottom: 4vh;
 `;
 
 const Seperator = styled.hr``;
 
 const StyledP = styled.p`
   font-family: Montserrat, sans-serif;
-  font-size: 16px;
+  font-size: 2.5vh;
   font-weight: 500;
   color: #555;
 `;
 
 const StyledH4 = styled.h4`
-  margin: 5px;
-  font-size: 1.3rem;
+  /* margin: 5px; */
+  font-size: 4vh;
+  font-weight: 500;
+  /* font-size: 1.3rem; */
   background: linear-gradient(
     rgba(255, 255, 255, 1) 70%,
     rgba(201, 242, 246, 1) 30%
   );
-  width: 8.5rem;
+    width: 11.2vw;
 `;

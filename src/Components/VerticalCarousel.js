@@ -104,7 +104,7 @@ const NavigationButtons = styled.div`
   position: relative;
   display: flex;
 
-  height: 60px;
+  height: 100px;
   margin: 0 auto;
   width: 20%;
   margin-top: 1rem;

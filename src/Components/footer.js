@@ -78,8 +78,8 @@ export default Footer;
 const StyledFooter = styled.div`
   /* border-top: 5px solid rgba(122, 122, 122, 0.5); */
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 4vh;
+  margin-bottom: 6vh;
   /* border: 3px orange solid; */
 `;
 const StyledLogo = styled.img`
@@ -139,7 +139,7 @@ const ContactWrapper = styled.div`
 `;
 
 const SociaLogo = styled.img`
-  width: 17px;
+  width: 1.8vw;
   height: auto;
   padding: 10px;
   flex-grow: 1;
