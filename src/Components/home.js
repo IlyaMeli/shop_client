@@ -23,7 +23,9 @@ function Home() {
         {!loading_products ? (
           <StyledDiv>
             <ProductsWrapper>
+              <div>
               <Sh1>Latest Products</Sh1>
+              </div>
               <ProductList />
             </ProductsWrapper>
             <StyledRangeWrap>
