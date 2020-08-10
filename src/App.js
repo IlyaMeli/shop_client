@@ -66,5 +66,6 @@ function App() {
 export default App;
 
 const MainWrapper = styled.div`
-  margin: 30vh 6vw 0px 6vw;
+  margin: 20vh 6vw 0px 6vw;
 `;
+

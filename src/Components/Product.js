@@ -94,8 +94,8 @@ const StyledProduct = styled.li`
 `;
 
 const StyledImg = styled.img`
-  width: 220px;
-  height: auto;
+  width: auto;
+  height: 40vh;
   opacity: 1;
   transition: 0.3s ease-in-out;
 `;
@@ -113,14 +113,14 @@ const TextWrapper = styled.div`
 
 const StyledText = styled.div`
   /* border: 1px orange solid; */
-  font-weight: bold;
+  font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 2.5vh;
 `;
 
 const StyledPrice = styled.div`
-  font-size: 12px;
+  font-size: 2.2vh;
   font-weight: bold;
   color: #a2a2a2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
