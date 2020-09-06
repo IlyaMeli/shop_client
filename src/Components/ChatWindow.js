@@ -254,8 +254,8 @@ const STitle = styled.h3`
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 45px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 600;
   color: #ef2853;
   &:hover {
     cursor: pointer;
